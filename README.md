@@ -41,8 +41,11 @@ Present two options for list item order: newest-first and oldest-first.
 
 
 *Tasks can be multi-line text.
+
 *No limit to the number of tasks.
+
 *No date required at this time.
+
 *No drag-and-drop, grouping, or flags.
 
 
