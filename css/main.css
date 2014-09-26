@@ -1,11 +1,5 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -13,8 +7,7 @@
 html,
 button,
 input,
-select,
-textarea {
+select {
     color: #222;
 }
 
@@ -22,37 +15,6 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
-
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- 
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/* Remove default fieldset styles. */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/* Allow only vertical resizing of textareas. */
-
-textarea {
-    resize: vertical;
-}
-
 
 /* ==========================================================================
    Author's custom styles
@@ -86,16 +48,19 @@ textarea {
 
 body {
   font-family: 'open_sansregular', Verdana, Arial, sans-serif;
-  color: rgb(94,22,15);
-  //background: rgb(246, 247, 146);
+  margin: 1%;
 }
 
 /* Logo text styles */
 
 h1 {
-    font-family: 'bonvenocflight', Arial, sans-serif;
+    font-family: 'bonvenocflight', Verdana, Arial, sans-serif;
     color: rgb(224, 51, 42);
     font-size: 2em;
+    text-align: center;
+    background: rgb(224, 51, 42);
+    color: #fff;
+    border-radius: 10px;
 }
 
 .logoUpperCase {
@@ -105,56 +70,82 @@ h1 {
 
 .tagline {
     font-family: 'bonvenocflight', Arial, sans-serif;
-    font-size: 1.1em;
-    color: rgb(94,22,15);
-    margin-top: -1em;
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+    background: rgb(94, 22, 15);
+    margin-top: -10px;
+    margin-bottom: 2px;
+    padding: 1%;
 }
 
 .container {
-    background: rgb(42, 191, 75); /* temporary - main green color */
-    padding: 1% 3%;
+    background: rgb(42, 191, 75); /* main green color */
+    padding: 3%;
     margin: 0, 10%;
 }
 
-/* form styles */
+/* form input section */
+
+label {
+    font-size: .9em;
+    color: #fff;
+    margin-right: 6px;
+}
+
+/* style the input field for task list items */
+
+#the_form input {
+    font-size: 1em;
+    color: rgb(94, 22, 15);
+    border-radius: 6px;
+    margin-bottom: 1em;
+    padding: 1%;
+    width: 88%;
+}
+
+#submitButton {
+    background: white;
+    margin-top: 15px;
+    border: 1px solid rgb(94, 22, 15);
+    border-radius: 6px;
+    font-size: .9em;
+    padding: 1%;
+}
+
+/* style the task list */
 
 ul {
     list-style: none;
+    margin-left: 0;
+    padding: 0;
 }
+
+/* style the input and delete checkboxes */
 
 li input {
-    margin: 0 15px 0 0;
+    margin: .5em;
 }
 
-
+li {
+    border: 1px solid #fff;
+    padding: 6px;
+    margin-bottom: .6em;
+    background: rgba(131, 232, 104, .6);
+    border-radius: 6px;
+}
 
 .deleteListItem {
-  margin: 0 0 0 10px;
+  float: right;
+  margin: 0px 10px;
   position: relative;
-  top: 3px;
+  top: 6px;
   border-radius: 3px;
-  border: 1px solid gray;
+  border: 2px dotted #fff;
 }
 
 .completed {
     text-decoration: line-through;
     color: gray;
 }
-
-
-
-
-
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-/*
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-
-
 
