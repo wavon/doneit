@@ -12,8 +12,9 @@ select {
 }
 
 html {
-    font-size: 1em;
-    line-height: 1.4;
+    font-size: 1.2em;
+    line-height: 1.6;
+    height: 100%;
 }
 
 /* ==========================================================================
@@ -33,22 +34,11 @@ html {
     font-style: normal;
 }
 
-/* body webfont */
-
-@font-face {
-    font-family: 'open_sansregular';
-    src: url('OpenSans-Regular-webfont.eot');
-    src: url('OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('OpenSans-Regular-webfont.woff') format('woff'),
-         url('OpenSans-Regular-webfont.ttf') format('truetype'),
-         url('OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
   font-family: 'open_sansregular', Verdana, Arial, sans-serif;
-  margin: 1%;
+  margin: 0;
+  max-width: 768px;
+  height: 100%;
 }
 
 /* Logo text styles */
@@ -58,9 +48,10 @@ h1 {
     color: rgb(224, 51, 42);
     font-size: 2em;
     text-align: center;
-    background: rgb(224, 51, 42);
+    background: rgb(94, 22, 15);
     color: #fff;
-    border-radius: 10px;
+    margin: 0;
+    padding: 1%;
 }
 
 .logoUpperCase {
@@ -68,27 +59,17 @@ h1 {
     font-size: 110%;
 }
 
-.tagline {
-    font-family: 'bonvenocflight', Arial, sans-serif;
-    font-size: 1em;
-    color: #fff;
-    text-align: center;
-    background: rgb(94, 22, 15);
-    margin-top: -10px;
-    margin-bottom: 2px;
-    padding: 1%;
-}
-
 .container {
     background: rgb(42, 191, 75); /* main green color */
-    padding: 3%;
+    padding: 4%;
     margin: 0, 10%;
+    height: 100%;
 }
 
 /* form input section */
 
 label {
-    font-size: .9em;
+    font-size: 1em;
     color: #fff;
     margin-right: 6px;
 }
@@ -96,21 +77,22 @@ label {
 /* style the input field for task list items */
 
 #the_form input {
-    font-size: 1em;
+    font-size: 1.2em;
     color: rgb(94, 22, 15);
     border-radius: 6px;
     margin-bottom: 1em;
     padding: 1%;
-    width: 88%;
+    width: 86%;
 }
 
 #submitButton {
     background: white;
-    margin-top: 15px;
+    margin-top: 12px;
     border: 1px solid rgb(94, 22, 15);
     border-radius: 6px;
-    font-size: .9em;
-    padding: 1%;
+    font-size: 1em;
+    padding: 1.5%;
+    outline-color: yellow;
 }
 
 /* style the task list */
@@ -124,15 +106,20 @@ ul {
 /* style the input and delete checkboxes */
 
 li input {
-    margin: .5em;
+    margin: .7em;
 }
 
 li {
     border: 1px solid #fff;
+    height: 1.8em;
     padding: 6px;
-    margin-bottom: .6em;
-    background: rgba(131, 232, 104, .6);
+    margin-bottom: 1em;
+    background: rgb(131, 232, 104);
     border-radius: 6px;
+}
+
+input:focus {
+  outline-color: yellow;
 }
 
 .deleteListItem {
@@ -141,7 +128,8 @@ li {
   position: relative;
   top: 6px;
   border-radius: 3px;
-  border: 2px dotted #fff;
+  border: 2px solid #fff;
+  cursor: pointer;
 }
 
 .completed {
