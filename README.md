@@ -5,7 +5,7 @@ ToDo app - code challenge #1 for Portland Code School
 
 #Doneit app
 
-Time estimate: 20 hours
+Time estimate: 10 hours
 
 Completion time: Thursday Sep 25, 4pm
 
